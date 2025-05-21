@@ -10,7 +10,7 @@ export default function HierarchyTree() {
   const { data, isLoading, error } = useHierarchyData(queryString);
 
   return (
-    <Box>
+    <Box sx={{ maxWidth: 800, margin: "0 auto", padding: 7 }}>
       <HierarchyQuerySelector onChange={setQueryString} />
       <Box sx={{ minHeight: 352, minWidth: 250, mt: 2 }}>
         {isLoading && <p>Загрузка...</p>}
